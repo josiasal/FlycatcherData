@@ -24,13 +24,13 @@ namespace FlycatcherData.Parameters.V2
         public GetTimelinesV2Parameters(IGetTimelinesV2Parameters parameters)
         {
             UserId = parameters.UserId;
-            Exclude = parameters?.Exclude;
-            MaxResults = parameters?.MaxResults;
-            PaginationToken = parameters?.PaginationToken;
-            SinceId = parameters?.SinceId;
-            StartTime = parameters?.StartTime;
-            EndTime = parameters?.EndTime;
-            UntilId = parameters?.UntilId;
+            Exclude = parameters.Exclude;
+            MaxResults = parameters.MaxResults;
+            PaginationToken = parameters.PaginationToken;
+            SinceId = parameters.SinceId;
+            StartTime = parameters.StartTime;
+            EndTime = parameters.EndTime;
+            UntilId = parameters.UntilId;
 
             Expansions = parameters.Expansions;
             MediaFields = parameters.MediaFields;
@@ -38,7 +38,6 @@ namespace FlycatcherData.Parameters.V2
             PollFields = parameters.PollFields;
             TweetFields = parameters.TweetFields;
             UserFields = parameters.UserFields;
-
         }
 
         public string UserId { get; set; }
